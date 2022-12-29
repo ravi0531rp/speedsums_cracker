@@ -1,14 +1,15 @@
 import pyautogui
 import time
 import pyperclip
+import webbrowser
+
+webbrowser.open("https://speedsums.com/")
 
 time.sleep(3)
 
 while True:
-    pyautogui.moveTo(820,445)
-    pyautogui.click()
-    pyautogui.dragTo(930,445, button='left')
-    pyautogui.hotkey('command', 'c')
+    pyautogui.tripleClick(988,443)
+    pyautogui.hotkey('ctrl', 'c')
     pyperclip.copy(eval(pyperclip.paste().replace("x","*").replace("÷","//").replace("=","")))
-    pyautogui.click(882,511)
-    pyautogui.hotkey('command', 'v')
+    pyautogui.click(987,508)
+    pyautogui.hotkey('ctrl', 'v')

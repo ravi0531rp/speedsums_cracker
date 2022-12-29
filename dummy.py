@@ -6,6 +6,6 @@ import time
 # pyautogui.click()
 # pyautogui.dragTo(755,251, button='left')
 
-pyautogui.moveTo(850,445)
 time.sleep(3)
+pyautogui.tripleClick(850,445)
 # pyautogui.click(clicks=3)
